@@ -3,6 +3,51 @@
   transition: all .3s;
 }
 
+.voetjes {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	border-top: 1px solid #eee;
+  	padding-top: 15px;
+}
+
+.sidebar {
+    float: right;
+    width: 240px;
+}
+
+#msg {
+	font-family:Courier;
+ color: #CCCCCC;
+  background: #000000;
+  border: 3px double #CCCCCC;
+  padding: 10px;
+}
+
+.houder {
+  margin: 0 auto;
+  width: 90%;
+}
+@media (min-width: 48em) {
+  .houder {
+    width: 620px;
+  }
+}
+@media (min-width: 60em) {
+  .houder {
+    width: 768px;
+  }
+}
+@media (min-width: 70em) {
+  .houder {
+    width: 960px;
+  }
+}
+@media (min-width: 80em) {
+  .houder {
+    width: 1140px;
+  }
+}
 .siteHeader {
   border-bottom: 1px solid #eee;
 }
@@ -128,6 +173,8 @@ text-decoration:none
 .siteFooter {
   border-top: 1px solid #eee;
   padding-top: 15px;
+  position: fixed;
+  bottom: 0;
 }
 
 .meter {

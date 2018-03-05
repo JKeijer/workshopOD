@@ -1,11 +1,10 @@
 ﻿<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>nl.utwente.di</groupId>
-	<artifactId>ubercoaching</artifactId>
+	<artifactId>WorkshopFinal</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>Über-coaching</name>
-	<description>A servlet-based online health coach</description>
+	<name>WorkshopFinal</name>
 	<build>
 		<finalName>${project.artifactId}</finalName>
 		<plugins>
@@ -64,4 +63,5 @@
                 <version>2.46.0</version>
             </dependency>
 	</dependencies>
+	<description>A workshop for the open days for tcs</description>
 </project>

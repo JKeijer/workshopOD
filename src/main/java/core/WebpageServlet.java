@@ -1,6 +1,5 @@
 package core;
 
-
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -10,25 +9,31 @@ import javax.servlet.http.HttpServletResponse;
 public class WebpageServlet extends MyServlet {
     private static final long serialVersionUID = 1L;
 
-    // --- Instance variables ----------------------------------------------------------------
-    
-    // --- Getters ---------------------------------------------------------------------------
+    // --- Instance variables
+    // ----------------------------------------------------------------
 
-    // --- Request handlers ------------------------------------------------------------------
-    
+    // --- Getters
+    // ---------------------------------------------------------------------------
+
+    // --- Request handlers
+    // ------------------------------------------------------------------
+
     /**
      * Any GET requests concerning the web pages.
      */
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+    	System.out.println("doGet webpage");
         super.doGet(request, response);
-        
-        if (!getUrlParts().get(0).matches("register|start|contact|startAbout|calculator|startMath|startTrack|startStats")  && !Validation.validateOrForward(request, response)) {
-            return;
-        }
-        
-        
+
+        // if
+        // (!getUrlParts().get(0).matches("register|start|contact|startAbout|calculator|startMath|startTrack|startStats")
+        // ) {
+        // return;
+        // }
+        //
+
         switch (getUrlParts().get(0)) {
         default:
             // Just show the page.
@@ -36,15 +41,16 @@ public class WebpageServlet extends MyServlet {
             break;
         }
     }
-    
+
     /**
      * Any POST request concerning the web pages.
      */
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+    	System.out.println("doPost webpage");
         super.doPost(request, response);
-        
+
         switch (getUrlParts().get(0)) {
         default:
             // Just show the page.
